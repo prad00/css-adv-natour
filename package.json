@@ -1,0 +1,26 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css ",
+    "concat:sass": "concat -o ./css/style.concat.css ./css/icon-font.css ./css/style.comp.css",
+    "prefix:sass": "postcss css/style.concat.css --use autoprefixer -b 'last 5 versions'  -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "start": "live-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "postcss": "^8.2.9",
+    "postcss-cli": "^8.3.1"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "concat": "^1.0.3",
+    "live-server": "^1.2.1"
+  }
+}

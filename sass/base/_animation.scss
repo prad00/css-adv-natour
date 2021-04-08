@@ -1,0 +1,41 @@
+@keyframes moveInLeft {
+    0%{  /*  at start postion how elemt should lock, and its position at start */
+        opacity: 0;
+        transform: translate(-100px,100px);
+    }
+
+    80%{    /*  at 80% postion how element should lock, and its position at 80% */
+        transform: translateY(100px);
+    }
+
+    100%{   /*  at final postion how elemt should lock, and its position at final */
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0%{
+        opacity: 0;
+        transform: translate(100px,-100px);
+    }
+
+    80%{
+        transform: translateY(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes visibility {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}

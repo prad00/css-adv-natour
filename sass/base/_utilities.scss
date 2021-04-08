@@ -1,0 +1,32 @@
+.u-center-text{text-align: center !important;}
+
+.u-margin-bottom-big{
+    margin-bottom: 13rem;
+
+    @include respond(tab-port){
+        margin-bottom: 8rem;
+    }
+
+    @include respond(phone){
+        margin-bottom: 6rem;
+    }
+}
+.u-margin-bottom-medium{
+    margin-bottom: 4rem;
+
+    @include respond(tab-port){
+        margin-bottom: 3rem;
+    }
+
+    @include respond(phone){
+        margin-bottom: 2rem;
+    }
+
+}
+.u-margin-bottom-small{
+    margin-bottom: 2rem;
+
+    @include respond(phone){
+        margin-bottom: 1rem;
+    }
+}

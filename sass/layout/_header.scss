@@ -1,0 +1,47 @@
+.header{
+    background-image: linear-gradient(to right bottom, rgba($color-primary, 0.8),rgba($color-primary-dark, 0.8)) ,url("../img/hero.jpg");
+    height: 96vh;
+    // height: 100vh;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
+    -webkit-clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
+    // clip-path: inset(0 0 0 round 50px 0);
+    // clip-path: circle(at 50% 50%); //perfect circle
+    //syntax:clip-path: circle(<radius>at 50% 50%);
+    // clip-path: ellipse( at center);  //perfect ellipse
+    // clip-path: ellipse(100% 100% at 50% 100%);
+
+    @include respond(tab-port){
+        clip-path: polygon(0 0,100% 0,100% 80vh,0 100%);
+        -webkit-clip-path: polygon(0 0,100% 0,100% 80vh,0 100%);
+    }
+
+    @include respond(phone){
+        clip-path: polygon(0 0,100% 0,100% 85vh,0 100%);
+        -webkit-clip-path: polygon(0 0,100% 0,100% 85vh,0 100%);
+    }
+
+    &__logo-box {
+        position: absolute;
+        left: 4rem;
+        top: 4rem;
+       
+    }
+    
+    &__logo {
+        height: 3.5rem;
+    }
+    
+    &__text-box {
+        position: absolute;
+        top: 43%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+
+}
